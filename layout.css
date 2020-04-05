@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:500&display=swap&subset=chinese-traditional');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Bungee+Shade|Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Bungee+Shade|Press+Start+2P|Special+Elite&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', ;
+}
+
+
+.todo__list-body{
+    width: 100%;
+    height: 100vh;
+    background: #fcd36a;
+    background: linear-gradient(0deg,rgb(252, 235, 195),#ffe49f,#fcd36a);
+    position: relative;
+}
+.todo__title{
+    margin-left: 20px;
+}
+.todo__title p{
+    font-family: 'Bangers', cursive;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Bungee Shade', cursive;
+    color: #FFF;
+    font-size: 3.2rem;
+    z-index: 3;
+   
+}
+.peep img{
+    width: 40%;
+    position: absolute;
+}
+
+/* .bub{
+    width: 180px;
+    height: 130px;
+    background: #FFF;
+    position: absolute;
+    border: 3px solid #000;    
+    border-radius: 50px;
+ 
+} */
+
+.bub__text {
+    font-family: 'Bangers', cursive;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 28px;
+    margin-left: 180px;
+    margin-top: 10px;
+    
+    
+
+}
+
+
+/************ 輸入功能中心分隔***********/
+.todo__list{
+    margin:auto; 
+    margin-top: 10px;
+    margin-right: 200px;
+    background-color: #468cb4;
+    /*background: linear-gradient(180deg,#f8dad3,#82c2e7,#3b7698); */
+    width: 400PX;
+    height: 550px;
+    border-radius: 20px;
+    border: 6px dashed #fff;
+    overflow: scroll; 
+    box-shadow: 2px 5px 15px rgb(117, 119, 104);
+  
+       
+}
+
+header{
+    width: 400px;
+    height: 80px;
+    background-color: #fcbeb1;
+    box-shadow: 0px 2px 3px rgb(172, 146, 146);
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    position: relative;
+}
+header .txt{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.txt input{
+    width: 80%;
+    height: 35px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500px;
+    text-indent: 10px;
+    background-color: rgba(255, 255, 255, 0.486);
+    margin: 20px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    appearance: none;
+}
+header button{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+header button img{
+    width: 15px;
+    height: 15px;
+    padding-top: 2px
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+ul{
+    width: 85%;
+    height: 40px;
+    margin: auto;
+    /* box-shadow: 0px 5px 10px rgba(212, 191, 164, 0.692); */
+}
+ul li{
+    list-style: none;
+    width: 100%;
+    min-height: 40px;
+    background-color: #FFF;
+    border-radius: 7px;
+    box-shadow: 0px 5px 10px rgba(131, 158, 173, 0.692);
+    line-height: 40px;
+    margin-top: 20px;
+    text-indent: 10px;
+    position: relative;
+}
+/* ul li:last-of-type{
+    margin: 0;
+} */
+ul li .buttons{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+ul li .buttons button{
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: none;
+     border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+ul li .buttons button:first-of-type::after{
+    content: '';
+    width: 1px;
+    height: 30px;
+    background-color: rgb(131, 131, 131);
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.buttons button .fa{
+    font-size: 22px;
+    line-height: 40px;
+    color: #ccc;
+    transition: 0.5s;
+    box-sizing: border-box;
+} 
+.remove .fa:hover{
+    color: #E85656;
+}
+.buttons .complete .circle{
+    width: 18px;
+    height: 18px;
+    border: 2px solid #25b99a;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 2px;
+    position: relative;
+    transition: 0.5s;
+}
+.buttons .complete .fa-check{
+    font-size: 12px;
+    color: #25b99a;
+    position: absolute;
+    top: -10px;
+    right: 3px;
+
+}
+
+.buttons .complete:hover .circle{
+    background-color: #25b99a;
+}
+.buttons .complete:hover i{
+    color: #FFF;
+}
+
+/********* 刪除 *********/
+.del{
+    color: rgb(70, 70, 70);
+    transition: 0.5s;
+}
+.del:hover{
+    color: red;
+}
+/********* 刪除 *********/
+
+/********* 完成 *********/
+.comp{
+    color: rgb(70, 70, 70);
+    transition: 0.5s;
+}
+.comp:hover{
+    color: #25b99a;
+}
+/********* 完成 *********/
