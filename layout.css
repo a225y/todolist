@@ -61,7 +61,7 @@
     margin:auto; 
     margin-top: 10px;
     margin-right: 200px;
-    background-color: #468cb4;
+    background-color: #FFF;
     /*background: linear-gradient(180deg,#f8dad3,#82c2e7,#3b7698); */
     width: 400PX;
     height: 550px;
@@ -75,8 +75,9 @@
 header{
     width: 400px;
     height: 80px;
-    background-color: #fcbeb1;
-    box-shadow: 0px 2px 3px rgb(172, 146, 146);
+    background-color: #8fbbec;
+    background: linear-gradient(40deg,#569ff1,#8fbbec);
+    box-shadow: 0px 2px 3px rgb(180, 184, 192);
     border-bottom-left-radius: 20px; 
     border-bottom-right-radius: 20px; 
     border-top-left-radius: 20px; 
@@ -231,7 +232,7 @@ ul li .buttons button:first-of-type::after{
 /********* 完成 *********/
 
 
-@media screen and (max-width:600px) {
+@media only screen and (max-width: 414px) {
     
 .todo__list-body{
     width: 100%;
@@ -258,6 +259,9 @@ ul li .buttons button:first-of-type::after{
     
 }
 
+.bub{
+    height: 15px;
+}
 .bub__text {
     font-family: 'Bangers', cursive;
     font-family: 'Special Elite', cursive;
@@ -273,21 +277,19 @@ ul li .buttons button:first-of-type::after{
 .todo__list{
     margin:auto; 
     margin-top: 30px;
-    background-color: #468cb4;
-    width: 400PX;
+    background-color: #FFF;
+    width: 380px;
     height: 550px;
     border-radius: 20px;
     overflow: scroll; 
     box-shadow: 2px 5px 15px rgb(117, 119, 104);
-  
-       
 }
 
 header{
-    width: 400px;
+    width: 380px;
     height: 80px;
-    background-color: #fcbeb1;
-    box-shadow: 0px 2px 3px rgb(172, 146, 146);
+    background: linear-gradient(40deg,#569ff1,#8fbbec);
+    box-shadow: 0px 2px 3px rgb(180, 184, 192);
     border-radius: 20px;
     position: relative;
 }
@@ -319,6 +321,7 @@ header button{
     top: 20px;
     right: 40px;
     border-radius: 30px;
+    background-color: #FFF;
     border: none;
     cursor: pointer;
 }
